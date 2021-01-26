@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  bot:
+    command: /opt/app/bin/voicehaterbot/bin/voicehaterbot start
+    build:
+      context: .
