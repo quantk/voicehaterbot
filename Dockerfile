@@ -1,5 +1,6 @@
 FROM elixir:1.10.4
 ARG tg_token 
+WORKDIR /app
 COPY . .
 RUN export MIX_ENV=prod && \
     export TG_TOKEN=${tg_token} && \
@@ -7,6 +8,6 @@ RUN export MIX_ENV=prod && \
     mix local.hex --force && \
     mix local.rebar --force && \
     mix deps.get && \
-    mix release && \
-    mkdir -p /opt/app/bin && \
-    cp -R _build/prod/rel/voicehaterbot /opt/app/bin
+    mix release
+
+CMD ["_build/prod/rel/voicehaterbot/bin/voicehaterbot", "start"]
