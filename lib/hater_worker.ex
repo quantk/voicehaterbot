@@ -33,7 +33,8 @@ defmodule HaterWorker do
     stickers = [
       "CAACAgIAAx0CVbTqhgACByZgESqrXBG35hBqtVlQ_xCdmmfuLwACWwADLEFmGSVEgGM8SxEbHgQ",
       "CAACAgIAAxkBAAMVYBAeFbVA1re0kS22lwy2Y0sVKpUAAl0AA33XWRFpMUFz8IeUXx4E",
-      "CAACAgIAAx0CVbTqhgACBydgESriLp6Yvemk4a5Xus3-lLZg2QACaAAD_WKhC8FAQIoUsmFiHgQ"
+      "CAACAgIAAx0CVbTqhgACBydgESriLp6Yvemk4a5Xus3-lLZg2QACaAAD_WKhC8FAQIoUsmFiHgQ",
+      "CAACAgIAAxkBAAEC_o5hVsG_jbbPxYyN94380i--E2oPEgACRQsAAgRhMEhL99qWMKqQtiEE"
     ]
 
     Enum.random(stickers)
